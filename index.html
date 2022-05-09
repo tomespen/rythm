@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rythm</title>
+<script>
+    var s1 = new Audio('sounds/s1.wav');
+    var s2 = new Audio('sounds/s2.wav');
+</script>
+</head>
+<body>
+<form method="get">
+    <input type="range" min="1" value="120" max="240">
+  <button onclick="javascript:s1.play();">Sound 1</button>  
+  <button onclick="javascript:s2.play();">Sound 2</button>  
+</form>
+</body>
+</html>
