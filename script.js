@@ -3,7 +3,7 @@ let s2 = new Audio('sounds/s2.wav');
 let nIntervId;
 
 let queue = [];
-let beatsIn1Min = 60000;
+let oneMinMills = 60000;
 let beatcount;
 
 
@@ -15,8 +15,8 @@ function start() {
         
         console.log(beatcount);        
         let gtempoelemval = document.getElementById('globaltempo').value;
-        let tempointerval = beatsIn1Min / gtempoelemval;
-        console.log(beatsIn1Min + ' / ' + gtempoelemval + ' = ' + tempointerval);
+        let tempointerval = oneMinMills / gtempoelemval;
+        console.log(oneMinMills + ' / ' + gtempoelemval + ' = ' + tempointerval);
 
         nIntervId = setInterval(play, tempointerval);
       }
